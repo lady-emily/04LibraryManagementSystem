@@ -15,7 +15,6 @@
                 <Button fx:id="view_available_books" layoutX="14.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleAvailable" prefHeight="26.0" prefWidth="154.0" text="Available" />
                 <Button fx:id="view_borrowed_books" layoutX="14.0" layoutY="199.0" mnemonicParsing="false" onAction="#handleBorrowed" prefHeight="26.0" prefWidth="154.0" text="Borrowed Books" />
                 <Button fx:id="manage_books" layoutX="14.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleManagement" prefHeight="26.0" prefWidth="154.0" text="Book Management" />
-                <Button fx:id="view_transactions" layoutX="14.0" layoutY="315.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="154.0" text="Transactions" />
                 <Label layoutX="5.0" layoutY="48.0" text="Ems Library">
                     <font>
                         <Font name="Brush Script MT Italic" size="40.0" />
