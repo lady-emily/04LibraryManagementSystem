@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="307.0" style="-fx-background-color: #39E75F;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="65.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/demo_jfx/view/images/book_icon3.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="13.0" layoutY="14.0" prefHeight="46.0" prefWidth="285.0" text="Ems Library Management System">
+               <font>
+                  <Font name="Blackadder ITC" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="294.0" text="mylibrarysys@book.com">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="407.0" prefWidth="295.0">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="82.0" layoutX="114.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/demo_jfx/view/images/lock-icon-free-vector2.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="label_password" layoutX="21.0" layoutY="198.0" text="Password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_password" layoutX="111.0" layoutY="193.0" prefHeight="22.0" prefWidth="173.0" promptText="********">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="button_login" layoutX="58.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="34.0" prefWidth="167.0" style="-fx-background-color: #39E75F; -fx-cursor: hand;" text="Login">
+               <font>
+                  <Font name="Bodoni MT" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="62.0" layoutY="364.0" text="Not a user?">
+               <font>
+                  <Font name="Bodoni MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_sign_up" layoutX="124.0" layoutY="356.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="65.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign up!" textFill="#381ee0" underline="true">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="label_email" layoutX="40.0" layoutY="145.0" text="Email">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_email" layoutX="111.0" layoutY="140.0" promptText="email@mail">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="librarian_radio" layoutX="52.0" layoutY="268.0" text="Librarian">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="customer_radio" layoutX="157.0" layoutY="268.0" text="Customer">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="radio_librarian" layoutX="36.0" layoutY="269.0" mnemonicParsing="false">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radio_customer" layoutX="140.0" layoutY="269.0" mnemonicParsing="false">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
