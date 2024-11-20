@@ -1,5 +1,6 @@
 package com.example.demo_jfx;
 
+import com.example.demo_jfx.controllers.LibrarianDashController;
 import com.example.demo_jfx.database.DatabaseConnectivity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -18,6 +19,8 @@ public class LibraryManagementSystem extends Application {
             databaseConnectivity.createBookTable();
             databaseConnectivity.createPatronsTable();
             databaseConnectivity.createTransactionsTable();
+//            LibrarianDashController librarianDashController = new LibrarianDashController();
+//            librarianDashController.populateBookTable();
         }
         catch (Exception e) {
             System.err.println("An error occurred while running the database: " + e.getMessage());

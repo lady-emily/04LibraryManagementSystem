@@ -11,13 +11,11 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class BorrowedBooks {
+public class BorrowedBooks implements Initializable {
 
 //Initializable is an interface used for controller Initialisation
 // method to override is initialize()
 // initialise() method allows to work with components, containers, etc
-
-    public class BorrwedBooks implements Initializable {
 
         // initialise components
         @FXML

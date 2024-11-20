@@ -22,24 +22,31 @@ public class DBUtils {
     public static void changeScene(Stage stage, String fxmlFile, String title, String username) {
         Parent root = null; //Parent is a base class for all nodes with children
         //Customer clicks on login button
-        if (username != null) {
-            try{
-                FXMLLoader loader = new FXMLLoader(DBUtils.class.getResource(fxmlFile));
-                root = loader.load();
-                LogInController controller = loader.getController();
-            }
-            catch (IOException e){
-                e.printStackTrace();
-            }
+//        if (username != null) {
+//            try{
+//                FXMLLoader loader = new FXMLLoader(DBUtils.class.getResource(fxmlFile));
+//                root = loader.load();
+//            }
+//            catch (IOException e){
+//                e.printStackTrace();
+//            }
+//        }
+//        //Customer switches between login and signup pages
+//        else{
+//            try{
+//                root = FXMLLoader.load(DBUtils.class.getResource(fxmlFile));
+//            }
+//            catch (IOException e){
+//                e.printStackTrace();
+//            }
+//        }
+
+        try{
+            FXMLLoader loader = new FXMLLoader(DBUtils.class.getResource(fxmlFile));
+            root = loader.load();
         }
-        //Customer switches between login and signup pages
-        else{
-            try{
-                root = FXMLLoader.load(DBUtils.class.getResource(fxmlFile));
-            }
-            catch (IOException e){
-                e.printStackTrace();
-            }
+        catch(IOException e){
+            e.printStackTrace();
         }
 
         //Notes

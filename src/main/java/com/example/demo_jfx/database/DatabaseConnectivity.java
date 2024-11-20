@@ -20,6 +20,7 @@ public class DatabaseConnectivity {
                         author VARCHAR(100) NOT NULL,
                         genre VARCHAR (50),
                         published_year INT,
+                        price FLOAT NOT NULL,
                         copies INT DEFAULT 1
                     )
                 """;

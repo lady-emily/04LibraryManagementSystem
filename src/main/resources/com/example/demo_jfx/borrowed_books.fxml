@@ -4,17 +4,15 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo_jfx.view.librarian.BorrowedBooks">
-   <children>
-      <TableView layoutX="75.0" layoutY="35.0" prefHeight="435.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <columns>
-          <TableColumn prefWidth="175.33331298828125" text="Title " />
-          <TableColumn prefWidth="105.99993896484375" text="Author" />
-            <TableColumn prefWidth="133.99993896484375" text="Issuer" />
-            <TableColumn prefWidth="51.33331298828125" text="Price" />
-            <TableColumn prefWidth="138.66668701171875" text="Return Date" />
-        </columns>
-      </TableView>
-   </children>
-</AnchorPane>
+<TableView fx:id="borrowed_table" layoutX="75.0" layoutY="35.0" prefHeight="435.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo_jfx.controllers.LibrarianDashController">
+    <columns>
+        <TableColumn prefWidth="175.33331298828125" text="Title " />
+        <TableColumn prefWidth="105.99993896484375" text="Author" />
+        <TableColumn prefWidth="133.99993896484375" text="Issuer" />
+        <TableColumn prefWidth="51.33331298828125" text="Price" />
+        <TableColumn prefWidth="138.66668701171875" text="Return Date" />
+    </columns>
+   <columnResizePolicy>
+      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+   </columnResizePolicy>
+</TableView>
